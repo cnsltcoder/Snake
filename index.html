@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yılan Oyunu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>Yılan Oyunu</h1>
+
+    <div class="scores">
+      <div>Skor: <strong id="score">0</strong></div>
+      <div>En Yüksek Skor: <strong id="high-score">0</strong></div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"></canvas>
+
+      <div class="overlay" id="start-screen">
+        <h2>Yılan Oyunu</h2>
+        <p>Başlamak için Boşluk tuşuna bas</p>
+      </div>
+
+      <div class="overlay hidden" id="pause-screen">
+        <h2>Duraklatıldı</h2>
+      </div>
+
+      <div class="overlay hidden" id="game-over-screen">
+        <h2>Oyun Bitti!</h2>
+        <p>Skorun: <strong id="final-score">0</strong></p>
+        <button id="restart-button" type="button">Tekrar Oyna</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <h3>Kontroller</h3>
+      <p>Yön tuşları veya WASD ile hareket et</p>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
